@@ -12,13 +12,14 @@ import statistics
 from os import listdir
 from os.path import isfile, join
 
+# Read range file
 class Range:
     def __init__(self, chrome, start, end, symbol):
         self.chrome = chrome
         self.start = start
         self.end = end
         self.symbol = symbol
-
+# Read input coverage files
 class methData:
     def __init__(self, chrome, location, meth, umeth):
         self.chrome = chrome
@@ -26,7 +27,7 @@ class methData:
         self.meth = meth
         self.umeth = umeth
 
-
+# Process files
 def processFolder(folderPath):
     #Get folder name
     path = Path(folderPath)
@@ -99,8 +100,10 @@ def readRange(input):
     outputlins.append(title + "\n")
 
 
-# First param is a file defines the chromosome coordinates to check methylation level
-# Second param is folder path with cov
+
+# First param is a file defines the chromosomal coordinates
+# to check methylation level
+# Second param is folder path with .cov files
 # Third param is output file
 rangeFile = sys.argv[1]
 mypath = sys.argv[2]
