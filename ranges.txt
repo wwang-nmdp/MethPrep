@@ -1,0 +1,5 @@
+hello	string
+chr10	10796	47335	gene1
+chr10	10867	47335	gene2
+chr10	451100 476335	gene4
+chrY	56880137	57123071	gene6

@@ -36,7 +36,8 @@ def processFolder(folderPath):
     #Process files in the folder
     onlyfiles = [f for f in listdir(folderPath) if isfile(join(folderPath, f))]
     for file in onlyfiles:
-        readfile(folderPath + "//" + file)
+        if ".cov" in file:
+            readfile(folderPath + "//" + file)
 
 def readfile(input):
     my_map = {}
@@ -105,6 +106,7 @@ def readRange(input):
 # to check methylation level
 # Second param is folder path with .cov files
 # Third param is output file
+print("hello")
 rangeFile = sys.argv[1]
 mypath = sys.argv[2]
 output = sys.argv[3]
