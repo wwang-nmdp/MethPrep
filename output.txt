@@ -1,0 +1,4 @@
+fileName	gene1_count	gene1_ratio	gene2_count	gene2_ratio	gene4_count	gene4_ratio	gene6_count	gene6_ratio
+input_3.cov	3	0.5	0	NA	0	NA	8	0.5
+input_2.cov	3	0.5	0	NA	0	NA	8	0.5
+input_1.cov	6	0.5	2	0.5	0	NA	0	NA

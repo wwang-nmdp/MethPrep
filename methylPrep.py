@@ -105,7 +105,7 @@ def readRange(input):
 # First param is a file defines the chromosomal coordinates
 # to check methylation level
 # Second param is folder path with .cov files
-# Third param is output file
+# Third param is path to output file
 print("hello")
 rangeFile = sys.argv[1]
 mypath = sys.argv[2]
